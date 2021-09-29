@@ -1,0 +1,16 @@
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\bin\Debug\net5.0\deck-of-cards.exe
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\bin\Debug\net5.0\deck-of-cards.deps.json
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\bin\Debug\net5.0\deck-of-cards.runtimeconfig.json
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\bin\Debug\net5.0\deck-of-cards.runtimeconfig.dev.json
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\bin\Debug\net5.0\deck-of-cards.dll
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\bin\Debug\net5.0\ref\deck-of-cards.dll
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\bin\Debug\net5.0\deck-of-cards.pdb
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.csproj.AssemblyReference.cache
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.AssemblyInfoInputs.cache
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.AssemblyInfo.cs
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.csproj.CoreCompileInputs.cache
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.dll
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\ref\deck-of-cards.dll
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.pdb
+C:\Users\Trevor\Desktop\camp\september2021\w10d1\deck-of-cards\obj\Debug\net5.0\deck-of-cards.genruntimeconfig.cache

@@ -1,0 +1,23 @@
+~~~ GAME LOOP ~~~
+BETTING
+DEAL
+    DEALS 2 CARDS TO USER
+    DEALS 2 CARDS TO DEALER, 1 USER CAN SEE, 1 FACE DOWN.
+THE PLAY
+    HIT - DEAL ANOTHER CARD TO PLAYER - IF OVER 21 BUST LOSE INSTANTLY.
+    STAND - PLAYER TURN OVER
+THE DEALER PLAY
+    DEALER HITS ON ANYTHING BELOW 17
+    IF 17 OR OVER DEALER MUST STAND
+GAME FINISH
+    WHOEVER IS CLOSER TO 21 WINS
+    IF OVER 21 INSTANT LOSE FOR THAT DEALER/PLAYER.
+
+- abtrasct class - PLAYER
+- inherited class - Dealer and User
+- Polymorphism - different hit / stand methods for dealer and user
+
+CARD VALUES
+    - number cards equal their numeric value.
+    - ALL face cards (jack, queen, king) are 10
+    - ACES can be 1 OR 11 dynamically.

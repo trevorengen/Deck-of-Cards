@@ -7,6 +7,18 @@ namespace deck_of_cards
     class User : Player
     {
         public bool Win = false;
+        private int money = 100;
+        private int bet;
+        public int Money 
+        {
+            get { return money; }
+            set { money = value; }
+        }
+        public int Bet
+        {
+            get { return bet; }
+            set { bet = value; }
+        }
 
         public User(string name, Deck deck) : base(name, deck){}
         

@@ -7,18 +7,19 @@ namespace deck_of_cards
     {
         protected string name;
         protected List<Card> hand = new List<Card>();
-        protected bool play = false;
+        protected bool play = true;
         protected bool lose = false;
         protected int points = 0;
-
         public int Points 
         {
             get { return points; }
+            set { points = value; }
         }
         protected Deck deck;
         public List<Card> Hand 
         {
             get { return hand; }
+            set { hand = value; }
         }
         public bool Play 
         {
@@ -28,6 +29,7 @@ namespace deck_of_cards
         public bool Lose
         {
             get { return lose; }
+            set { lose = value; }
         }
         public Player(string name, Deck deck)
         {

@@ -24,12 +24,12 @@ namespace deck_of_cards
                 for (var i=0; i<this.Hand.Count; i++) {
                     if (this.Hand[i].Val == 11) {
                         this.Hand[i].Val = 1;
+                        this.points -= 10;
                         break;
                     }
                 }
                 this.lose = true;
                 this.play = false;
-                Console.WriteLine("Cody busted and is now destitute! Congratulations, you win!");
             }
             return card;
         } 

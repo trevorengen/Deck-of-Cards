@@ -5,6 +5,8 @@ namespace deck_of_cards
 {
     class Dealer : Player
     {
+        public Card ShownCard;
+        public Card HiddenCard;
         public Dealer(Deck deck) : base(deck)
         {
             this.name = "Cody";

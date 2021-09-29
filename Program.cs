@@ -8,7 +8,7 @@ namespace deck_of_cards
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Want to play blackjack?");
+            Console.WriteLine("Want to play blackjack, yes or no?");
             string wantToPlay = Console.ReadLine();
             bool play = false;
             if (wantToPlay.ToLower().StartsWith('y') || wantToPlay.ToLower() == "yes") {
@@ -17,6 +17,11 @@ namespace deck_of_cards
             while (play)
             {
                 GameLoop();
+                Console.WriteLine("Want to play again?");
+                string response = Console.ReadLine();
+                if (response.ToLower().StartsWith('n') || response.ToLower() == "no") {
+                    play = false;
+                }
             }
         }
         public static void GameLoop()
@@ -38,6 +43,9 @@ namespace deck_of_cards
                 Console.WriteLine("21! Cody loses immediately, the crowd rejoices!");
             } else {
                 Card dealerShown = dealer.Hit();
+                Card dealerHidden = dealer.Hit();
+                dealer.ShownCard = dealerShown;
+                dealer.HiddenCard = dealerHidden;
                 Console.WriteLine($"Dealers face up card is {dealerShown.DisplayCard()}.");
             }
 
@@ -60,18 +68,26 @@ namespace deck_of_cards
                     {
                         user.Stand();
                         System.Console.WriteLine($"You decided to stand, you have {user.Points}.");
+                        dealer.Play = true;
                     }
                     else if (user.Lose == true){
                         user.Play = false;
                         Console.WriteLine("You are done, how can you lose to Cody?????");
                     }
                 }
-                dealer.Play = true;
+                bool showCards = true;
                 while (dealer.Play)
                 {
+                    if (showCards) {
+                        Console.WriteLine($"Dealers cards are {dealer.HiddenCard.DisplayCard()} and {dealer.ShownCard.DisplayCard()}");
+                        Console.WriteLine($"Dealer has {dealer.Points}.");
+                    }
                         Card dealtCard = dealer.Hit();
                         string cardInfoDealer = dealtCard?.DisplayCard();
-                        System.Console.WriteLine($"The dealer drew {cardInfoDealer}.");
+                        if (dealtCard != null) {
+                            System.Console.WriteLine($"The dealer drew {cardInfoDealer}.");
+                            Console.WriteLine($"Dealer points now {dealer.Points}.");
+                        }
                         if (dealer.Lose)
                         {
                             user.Win = true;
@@ -79,8 +95,10 @@ namespace deck_of_cards
                 }
                 if (dealer.Points > user.Points) 
                 {
+                    user.Play = false;
                     System.Console.WriteLine("Gasp, you were no match for the Cody! The amount of shame you must feel...");
                 } else {
+                    user.Play = false;
                     System.Console.WriteLine("You won aginst Cody, which is not worth celebrating!");
                 }
             } 

@@ -31,7 +31,7 @@ namespace deck_of_cards
         }
         
         public string DisplayCard() {
-            return $"{stringVal} {suit}";
+            return $"{stringVal} of {suit}";
         }
     }
     
